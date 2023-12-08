@@ -18,11 +18,11 @@ with open('inputDay1.txt') as file:
     input=file.read().splitlines()
     
 digits={'one':'o1e','two':'t2o','three':'t3e','four':'4','five':'5e','six':'6','seven':'7n','eight':'e8t','nine':'9e'}
-cont=0
+sum=0
 for line in input:
     for x in digits:
         if x in line:
             line=line.replace(x, digits[x])
-    cont+=part1(line)  
-print(cont)
+    sum+=part1(line)  
+print(sum)
 

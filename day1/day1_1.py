@@ -7,7 +7,7 @@ import re
 with open('inputDay1.txt') as file:
     input=file.read().splitlines()
     
-    cont=0
+    sum=0
     for line in input:
         for x in line:
             if x.isdigit():
@@ -17,6 +17,6 @@ with open('inputDay1.txt') as file:
             if x.isdigit():
                 b=int(x) #last digit
             
-        cont+=a*10+b
+        sum+=a*10+b
         
-print(cont)
+print(sum)
