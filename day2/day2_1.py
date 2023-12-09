@@ -2,7 +2,7 @@
 #if the bag had been loaded with only 12 red cubes, 13 green cubes, and 14 blue cubes.
 #What is the sum of the IDs of those games?
 
-def ispossible(lista):
+def ispossible(list):
     for i in range(3,len(list),2):
         if list[i]=='red':
             if int(list[i-1])>12:
