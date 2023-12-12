@@ -19,13 +19,13 @@ import re
 with open('inputDay2.txt') as file:
     input=file.read().splitlines()
 
-sum=0   
+sum_ids=0   
 game=0
 for line in input:
     game+=1
     list=re.split(': |, |; | ',line)
     if ispossible(list):
-        sum+=game
-print(sum)        
+        sum_ids+=game
+print(sum_ids)        
     
     

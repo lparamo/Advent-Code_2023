@@ -7,7 +7,7 @@ import math
 with open('inputDay3.txt') as file:
     schem=list(file)
     
-sum=0
+sum_ratio=0
 possiblegear=[] #positions of possible gears '*'
 for i in range(len(schem)-1):
     for j in range(len(schem[0])-1):
@@ -25,5 +25,5 @@ for i, line in enumerate(schem):
                     dic[(n,m)].append(int(num.group()))
 for i in dic:
     if len(dic[i])==2:
-        sum+=dic[i][0]*dic[i][1]
-print(sum)
+        sum_ratio+=dic[i][0]*dic[i][1]
+print(sum_ratio)

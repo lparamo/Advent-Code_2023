@@ -9,7 +9,7 @@ import math
 with open('inputDay4.txt') as file:
     input=file.read().splitlines()
 
-sum=0   
+total=0   
 for line in input:
     n=0
     x = line.find(':')
@@ -24,5 +24,5 @@ for line in input:
         card=2**(n-1)
     else:
         card=0
-    sum+=card
-print(sum)
+    total+=card
+print(total)
