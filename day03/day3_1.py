@@ -9,7 +9,7 @@ import math
 with open('inputDay3.txt') as file:
     schem=list(file)
     
-sum=0
+sum_pnums=0
 sympos=[] #positions of symbols
 for i in range(len(schem)-1):
     for j in range(len(schem[0])-1):
@@ -23,5 +23,5 @@ for i, line in enumerate(schem):
             for m in range(num.start()-1,num.end()+1):
                 if (n,m) in sympos:
                     pnum=int(num.group())
-        sum+=pnum    
-print(sum)
+        sum_pnums+=pnum    
+print(sum_pnums)

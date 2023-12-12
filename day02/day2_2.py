@@ -8,7 +8,7 @@ import re
 with open('inputDay2.txt') as file:
     input=file.read().splitlines()
 
-sum=0   
+sum_power=0   
 for line in input:
     r=0
     g=0
@@ -24,5 +24,5 @@ for line in input:
         else:
             if int(list[i-1])>b:
                 b=int(list[i-1])
-    sum+=r*g*b
-print(sum) 
+    sum_power+=r*g*b
+print(sum_power) 

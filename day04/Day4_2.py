@@ -9,7 +9,7 @@ import math
 with open('inputDay4.txt') as file:
     input=file.read().splitlines()
 
-sum=0
+total=0
 card=0
 scratchcards={}
 for c in range(1,len(input)+1):
@@ -28,8 +28,7 @@ for line in input:
             n+=1
     for m in range(1,n+1):
         scratchcards[card+m]+=scratchcards[card]
-    sum+=scratchcards[card]
+    total+=scratchcards[card]
     
-print(sum)
-
+print(total)
         
